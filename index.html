@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Design By Aiman</h1>
+   
+    <button><a href="index.html" >Front</a></button>
+
+    <input type="text" id="searchbar" placeholder="search">
+</header>
+
+        <section>
+
+<div class="card-container">
+
+   <div class="card">
+<img src="f1.jpg" >
+<p>Front1</p>
+</div>
+<div class="card">
+<img src="f2.jpg" >
+<p>Front2</p>
+</div>
+<div class="card">
+<img src="f3.jpg" >
+<p>Front3</p>
+</div>
+<div class="card">
+<img src="f4.jpg" >
+<p>Front4</p>
+</div>
+<div class="card">
+<img src="f5.jpg" >
+<p>Front5</p>
+</div>
+<div class="card">
+<img src="f6.jpg" >
+<p>Front6</p>
+</div>
+<div class="card">
+<img src="f7.jpg" >
+<p>Front7</p>
+</div>
+<div class="card">
+<img src="f8.jpg" >
+<p>Front18</p>
+</div>
+<div class="card">
+<img src="f9.jpg" >
+<p>Front9</p>
+</div>
+<div class="card">
+<img src="f10.jpg" >
+<p>Front10</p>
+</div>
+
+  <div class="card">
+<img src="f11.jpg" >
+<p>Front11</p>
+</div>
+<div class="card">
+<img src="f12.jpg" >
+<p>Front12</p>
+</div>
+<div class="card">
+<img src="f13.jpg" >
+<p>Front13</p>
+</div>
+<div class="card">
+<img src="f14.jpg" >
+<p>Front14</p>
+</div>
+<div class="card">
+<img src="f15.jpg" >
+<p>Front15</p>
+</div>
+<div class="card">
+<img src="f16.jpg" >
+<p>Front16</p>
+</div>
+<div class="card">
+<img src="f17.jpg" >
+<p>Front17</p>
+</div>
+<div class="card">
+<img src="f18.jpg" >
+<p>Front18</p>
+</div>
+<div class="card">
+<img src="f19.jpg" >
+<p>Front19</p>
+</div>
+<div class="card">
+<img src="f20.jpg" >
+<p>Front20</p>
+</div>
+
+  <div class="card">
+<img src="f21.jpg" >
+<p>Front21</p>
+</div>
+<div class="card">
+<img src="f22.jpg" >
+<p>Front22</p>
+</div>
+<div class="card">
+<img src="f23.jpg" >
+<p>Front23</p>
+</div>
+<div class="card">
+<img src="f24.jpg" >
+<p>Front24</p>
+</div>
+<div class="card">
+<img src="f25.jpg" >
+<p>Front25</p>
+</div>
+<div class="card">
+<img src="f26.jpg" >
+<p>Front26</p>
+</div>
+<div class="card">
+<img src="f27.jpg" >
+<p>Front27</p>
+</div>
+<div class="card">
+<img src="f28.jpg" >
+<p>Front28</p>
+</div>
+<div class="card">
+<img src="f29.jpg" >
+<p>Front29</p>
+</div>
+<div class="card">
+<img src="f30.jpg" >
+<p>Front30</p>
+</div>
+
+  <div class="card">
+<img src="f31.jpg" >
+<p>Front31</p>
+</div>
+<div class="card">
+<img src="f32.jpg" >
+<p>Front32</p>
+</div>
+<div class="card">
+<img src="f33.jpg" >
+<p>Front33</p>
+</div>
+<div class="card">
+<img src="f34.jpg" >
+<p>Front34</p>
+</div>
+<div class="card">
+<img src="f35.jpg" >
+<p>Front35</p>
+</div>
+<div class="card">
+<img src="f36.jpg" >
+<p>Front36</p>
+</div>
+<div class="card">
+<img src="f37.jpg" >
+<p>Front37</p>
+</div>
+<div class="card">
+<img src="f38.jpg" >
+<p>Front38</p>
+</div>
+<div class="card">
+<img src="f39.jpg" >
+<p>Front39</p>
+</div>
+<div class="card">
+<img src="f40.jpg" >
+<p>Front40</p>
+</div>
+
+  <div class="card">
+<img src="f41.jpg" >
+<p>Front41</p>
+</div>
+<div class="card">
+<img src="f42.jpg" >
+<p>Front42</p>
+</div>
+<div class="card">
+<img src="f43.jpg" >
+<p>Front43</p>
+</div>
+<div class="card">
+<img src="f44.jpg" >
+<p>Front44</p>
+</div>
+<div class="card">
+<img src="f45.jpg" >
+<p>Front45</p>
+</div>
+<div class="card">
+<img src="f46.jpg" >
+<p>Front46</p>
+</div>
+<div class="card">
+<img src="f47.jpg" >
+<p>Front47</p>
+</div>
+<div class="card">
+<img src="f48.jpg" >
+<p>Front48</p>
+</div>
+<div class="card">
+<img src="f49.jpg" >
+<p>Front49</p>
+</div>
+</div>
+</section>
+<script src="jquery.js"></script>
+<script>
+$("#searchbar").keyup(function(){
+var searchtext = $(this).val().toLowerCase();//am
+$(".card").filter(function(){
+var cardtext = $(this).text().toLowerCase();
+if 
+(cardtext.indexOf(searchtext)>-1){
+$(this).show()
+}
+else
+$(this).hide()
+})
+})
+</script>
+</body>
+</html>
